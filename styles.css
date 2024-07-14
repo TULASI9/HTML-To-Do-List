@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #0c023a;
+}
+.logo img {
+    width: 268px;
+    height: 210px;
+}
+.container {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #d1e6f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+h1 {
+    text-align: center;
+    color: #062480;
+}
+form {
+    background: #f0f8ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+input[type="text"], 
+input[type="datetime-local"], 
+textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #09598b;
+    border-radius: 4px;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #0a36b9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background: #38a3c4;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background: #f0f8ff;
+    border: 1px solid #87cefa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li:hover {
+    background: #e6f2ff;
+}
+.task-content {
+    flex-grow: 1;
+    cursor: pointer;
+}
+.action-buttons button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.complete-btn {
+    background: #4CAF50;
+    color: white;
+}
+.incomplete-btn {
+    background: #FFA500;
+    color: white;
+}
+.delete-btn {
+    background: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
